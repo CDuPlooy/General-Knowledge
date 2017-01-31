@@ -13,7 +13,7 @@ ActiveSheet.Cells(x,y).Value
 ```
 
 Work with the offsets
-'''vba
+```vba
 ActiveCell.Offset(x,y).Value
 ActiveCell.Offset(x,y).Select
-'''
+```
