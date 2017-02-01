@@ -66,5 +66,5 @@ End Function
 ALl the above is kind of slow , range selections are very fast.
 
 ```vba
-WorksheetFunction.Sum(Worksheets("OEE").Range("J:J")
+WorksheetFunction.Sum(Worksheets("OEE").Range("J:J"))
 ```
