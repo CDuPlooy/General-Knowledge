@@ -68,3 +68,7 @@ ALl the above is kind of slow , range selections are very fast.
 ```vba
 WorksheetFunction.Sum(Worksheets("OEE").Range("J:J"))
 ```
+You can use wildcards in an Autofilter Criteria
+```Wildcards
+* and ?
+```
