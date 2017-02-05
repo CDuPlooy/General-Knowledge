@@ -36,7 +36,7 @@ At this point rdi and rsi is equals to ( pointing to really ) "%s" and "Hello wo
 Now the function needs to be called ( unrelated but try to remember that most functions return values are stored in rax ). al (a - low) is cleared and the function is called via
 
 ````nasm
-mov $0x0, $al
+mov $0x0, %al
 callq 0x4003e0
 ````
 
