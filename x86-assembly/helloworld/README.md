@@ -45,7 +45,9 @@ callq will pushes the value of %rip onto the stack so that once the function is 
 
 
 
-After the function has been called we need to clean up. This is done by resetting the stack frame pointer to the base stack pointer. The offset from rsp to rbp is -10. To 'fix' this we simply do
+After the function has been called we need to clean up. This is done by resetting the stack frame pointer to the base stack pointer. It is important to note that this function uses the cdelc calling convention of which the caller of the function is repsonsible to clean up the stack.
+
+The offset from rsp to rbp is -10. To 'fix' this we simply do
 
 ````nasm
 add $0x10,%rsp
