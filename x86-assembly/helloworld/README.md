@@ -52,5 +52,5 @@ add $0x10,%rsp
 ````
 
 
-As a side note you'll notice that at the start of libc initialisation push $rbp is done and then at the end of the code pop $rpb is done.
+As a side note you'll notice that at the start of libc initialisation push %rbp is done and then at the end of the code pop %rpb is done.
 I think this is done so there are no stack overflows/underflows when the process exits.
