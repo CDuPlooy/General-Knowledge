@@ -14,7 +14,7 @@ When calling printf firstly 16 bytes of space is cleared on the stack.
 This is done via
 
 ````nasm
-mov $rsp,$rbp
+mov %rsp,%rbp
 sub 0x10,%rsp
 ````
 
